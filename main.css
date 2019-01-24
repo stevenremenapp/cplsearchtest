@@ -137,7 +137,8 @@ body.custom-background {
   font-weight: normal;
   line-height: 140%; }
 
-input[type="search"]:hover {
+
+  input[type="search"]:hover {
   background-color: white; }
 
 body.custom-background {
@@ -289,14 +290,18 @@ body.custom-background {
       display: inline-block; }
 
 .l-search {
-  display: none;
+  display: block;
+  max-width: 220px;
   position: absolute;
   top: 10px;
   right: 0; }
-  @media (min-width: 768px) {
+  @media (max-width: 575px) {
     .l-search {
-      max-width: 220px;
-      display: block; } }
+      /* max-width: 220px;
+      display: block;  */
+      display: flex;
+      max-width: 100%;
+    } }
   .l-search select {
     margin-right: 2%;
     padding: 5px 9px 0 10px;
@@ -312,7 +317,8 @@ body.custom-background {
     -moz-appearance: none;
     text-indent: 0.01px;
     text-overflow: '';
-    background: #FCCE06 url(../images/search-select.png) no-repeat 120px 10px; }
+    background: #FCCE06 url(search-select.png) no-repeat 120px 10px; 
+    -webkit-appearance: none; }
   .l-search input[type="submit"] {
     color: #000;
     width: 46px;
@@ -330,6 +336,11 @@ body.custom-background {
       .l-search input[type="submit"] {
         width: 33px;
         font-size: 14px; } }
+  .l-search input[type="search"] {
+    box-sizing: border-box;
+    padding: 2px 5px;
+    width: 192px;
+  }
 
 #colophon {
   margin: 0 auto; }
@@ -494,7 +505,7 @@ table.hours {
   .cpl-button.cpl-button-search {
     background-color: #FCCE06;
     color: #000;
-    background-image: url("../images/search.svg");
+    background-image: url("search.svg");
     background-position: 50%;
     background-repeat: no-repeat; }
   .cpl-button:after {
