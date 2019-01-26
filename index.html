@@ -23,17 +23,25 @@
                         </div>
                     </div>
                     <div class="l-top-right">
-                                <div id="header-widget-area">
+                        <div id="header-widget-area">
                             <ul class="yoyo">
-                        <li id="nav_menu-3" class="widget-container widget_nav_menu"><div class="menu-top-menu-container"><ul id="menu-top-menu" class="menu">
-                        <li id="menu-item-8555" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-8555"><a href="https://cpl.org/locations/">Locations</a></li>
-                        <li id="menu-item-1544" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1544"><a href="https://cpl.org/donate/">Donate</a></li>
-                        <li id="menu-item-705" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-705"><a href="https://search.clevnet.org/client/en_US/cpl-main/search/patronlogin/http:$002f$002fsearch.clevnet.org$002fclient$002fcpl-main$002fsearch$002faccount$003f">My Account</a></li>
-                        <li id="menu-item-6679" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6679"><a href="https://cpl.org/contact/">Contact Us</a></li>
-                    </ul>
-                  </div></li>			</ul>
-                </div>
+                                <li id="nav_menu-3" class="widget-container widget_nav_menu">
+                                    <div class="menu-top-menu-container">
+                                        <ul id="menu-top-menu" class="menu">
+                                            <li id="menu-item-8555" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-8555"><a href="https://cpl.org/locations/">Locations</a></li>
+                                            <li id="menu-item-1544" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1544"><a href="https://cpl.org/donate/">Donate</a></li>
+                                            <li id="menu-item-705" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-705"><a href="https://search.clevnet.org/client/en_US/cpl-main/search/patronlogin/http:$002f$002fsearch.clevnet.org$002fclient$002fcpl-main$002fsearch$002faccount$003f">My Account</a></li>
+                                            <li id="menu-item-6679" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6679"><a href="https://cpl.org/contact/">Contact Us</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                            </ul>
                         </div>
+                        <div class="search-icon-container">
+                            <i class="fas fa-search search-icon" id="search-icon"></i>
+                            <i class="fas fa-times close-search-icon hidden" id="close-search-icon"></i>
+                        </div>
+                    </div>
             </div>
             <div class="l-nav-container">
                 <div class="l-contained">
@@ -123,25 +131,42 @@
                         </nav>
                     </div>
                         <div class="l-search">
-        <form role="search" method="get" class="search-form"
-        action="https://cpl.org/">
-        <label>
-        <span class="screen-reader-text">Search for: </span>
-        <input type="search" class="search-field" placeholder="Search here" name="s" />
-        <select id="simple" name="simple">
-        <option value="catalog">Catalog</option>
-        <option value="overdrive">ebooks</option>
-        <option value="digitalgallery">Digital Gallery</option>
-        <option value="site">Library</option>
-        </select>
-        </label>
-        <input class="cpl-button cpl-button-search" value=" " name="search" alt="Search" type="submit" />
-        </form>
+                            <form role="search" method="get" class="search-form"
+                            action="https://cpl.org/">
+                            <label>
+                            <span class="screen-reader-text">Search for: </span>
+                            <input type="search" class="search-field" placeholder="Search here" name="s" />
+                            <select id="simple" name="simple">
+                            <option value="catalog">Catalog</option>
+                            <option value="overdrive">ebooks</option>
+                            <option value="digitalgallery">Digital Gallery</option>
+                            <option value="site">Library</option>
+                            </select>
+                            </label>
+                            <input class="cpl-button cpl-button-search" value=" " name="search" alt="Search" type="submit" />
+                            </form>
+                        </div>
+                        <div class="l-search-mobile hidden">
+                            <form role="search" method="get" class="search-form"
+                            action="https://cpl.org/">
+                            <label>
+                            <span class="screen-reader-text">Search for: </span>
+                            <input type="search" class="search-field" placeholder="Search here" name="s" />
+                            <select id="simple" name="simple">
+                            <option value="catalog">Catalog</option>
+                            <option value="overdrive">ebooks</option>
+                            <option value="digitalgallery">Digital Gallery</option>
+                            <option value="site">Library</option>
+                            </select>
+                            </label>
+                            <input class="cpl-button cpl-button-search" value=" " name="search" alt="Search" type="submit" />
+                            </form>
+                        </div>
                     </div>
-                </div>
             </div>
         </header>
         </div><!-- #header-full -->
         <div style="clear:both;height:0;"> </div>
+        <script src="script.js"></script>
 </body>
 </html>
